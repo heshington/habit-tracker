@@ -49,7 +49,7 @@ today = datetime.now()
 update_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/graph1/{today.strftime('%Y%m%d')}"
 
 updated_config = {
-    "quantity" : "50",
+    "quantity": "50",
 }
 
 response = requests.put(url=update_endpoint, json=updated_config, headers=headers)
